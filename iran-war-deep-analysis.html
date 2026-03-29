@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iran War 2026 — Deep Strategic Intelligence Brief</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #1a1a1a;
+  --paper: #f5f0e8;
+  --paper2: #ede8de;
+  --paper3: #e4ddd0;
+  --red: #8b1a1a;
+  --red2: #c0392b;
+  --red3: #e74c3c;
+  --amber: #a05c00;
+  --amber2: #d4870a;
+  --green: #1a5c2a;
+  --green2: #27ae60;
+  --blue: #1a3a5c;
+  --blue2: #2980b9;
+  --muted: #6b6055;
+  --border: #c8bfb0;
+  --border2: #d8d0c4;
+  --rule: #b0a898;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* MASTHEAD */
+.masthead {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0;
+  border-bottom: 4px solid var(--red2);
+}
+
+.masthead-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 32px 24px;
+}
+
+.masthead-kicker {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #aaa;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.masthead-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(36px, 6vw, 80px);
+  font-weight: 900;
+  line-height: 0.9;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+}
+
+.masthead-title span { color: var(--red3); font-style: italic; }
+
+.masthead-deck {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: #ccc;
+  max-width: 700px;
+  line-height: 1.5;
+  border-left: 3px solid var(--red2);
+  padding-left: 16px;
+  margin-bottom: 24px;
+}
+
+.masthead-meta {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.meta-item strong { color: #ddd; }
+
+/* LIVE TICKER */
+.ticker {
+  background: var(--red);
+  color: white;
+  padding: 8px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ticker-inner {
+  display: inline-flex;
+  gap: 0;
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-item {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 0 32px;
+  border-right: 1px solid rgba(255,255,255,0.3);
+}
+
+.ticker-item strong { font-weight: 500; }
+
+/* MAIN LAYOUT */
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+/* SECTION HEADERS */
+.section-head {
+  border-top: 3px double var(--ink);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 0 8px;
+  margin-bottom: 24px;
+  margin-top: 48px;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.section-head:first-of-type { margin-top: 0; }
+
+.section-num {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--red);
+  letter-spacing: 2px;
+  flex-shrink: 0;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  flex: 1;
+}
+
+.section-sub {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* PULL QUOTE */
+.pull-quote {
+  border-left: 4px solid var(--red);
+  margin: 24px 0;
+  padding: 12px 20px;
+  background: var(--paper2);
+}
+
+.pull-quote p {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.pull-quote cite {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* TIMELINE — NEWSPAPER COLUMN STYLE */
+.timeline-grid {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 0;
+  margin-bottom: 8px;
+}
+
+.tl-date-col {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+  padding-top: 4px;
+  text-align: right;
+  padding-right: 16px;
+  line-height: 1.4;
+  border-right: 2px solid var(--border);
+  padding-bottom: 24px;
+  position: relative;
+}
+
+.tl-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--red);
+  border: 2px solid var(--paper);
+  outline: 2px solid var(--red);
+  position: absolute;
+  right: -6px;
+  top: 4px;
+}
+
+.tl-dot.past { background: var(--muted); outline-color: var(--muted); }
+.tl-dot.now { background: var(--red3); outline-color: var(--red3); box-shadow: 0 0 0 3px rgba(231,76,60,0.2); }
+.tl-dot.future { background: var(--amber2); outline-color: var(--amber2); }
+.tl-dot.far { background: var(--blue2); outline-color: var(--blue2); }
+
+.tl-content {
+  padding-left: 20px;
+  padding-bottom: 24px;
+}
+
+.tl-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.tl-body {
+  font-size: 13px;
+  color: #333;
+  line-height: 1.65;
+  margin-bottom: 8px;
+}
+
+.tl-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tl-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 1px;
+  padding: 2px 7px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  text-transform: uppercase;
+  background: var(--paper2);
+}
+
+.tl-tag.red { border-color: var(--red); color: var(--red); background: rgba(139,26,26,0.05); }
+.tl-tag.amber { border-color: var(--amber); color: var(--amber); background: rgba(160,92,0,0.05); }
+.tl-tag.green { border-color: var(--green); color: var(--green); background: rgba(26,92,42,0.05); }
+.tl-tag.blue { border-color: var(--blue); color: var(--blue); background: rgba(26,58,92,0.05); }
+.tl-tag.now { border-color: var(--red3); color: var(--red3); background: rgba(231,76,60,0.08); }
+
+/* SCENARIOS */
+.scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 700px) {
+  .scenario-grid { grid-template-columns: 1fr; }
+  .impact-two-col { grid-template-columns: 1fr !important; }
+  .ai-four-col { grid-template-columns: 1fr 1fr !important; }
+}
+
+.scenario-card {
+  border: 1px solid var(--border);
+  background: var(--paper2);
+  padding: 20px;
+  position: relative;
+}
+
+.sc-bar-top {
+  height: 5px;
+  margin: -20px -20px 16px;
+  border-radius: 0;
+}
+
+.scenario-card.best .sc-bar-top { background: var(--green2); }
+.scenario-card.mid .sc-bar-top { background: var(--amber2); }
+.scenario-card.worst .sc-bar-top { background: var(--red2); }
+
+.sc-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.scenario-card.best .sc-label { color: var(--green); }
+.scenario-card.mid .sc-label { color: var(--amber); }
+.scenario-card.worst .sc-label { color: var(--red); }
+
+.sc-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.sc-prob {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.sc-prob-bar {
+  flex: 1;
+  height: 6px;
+  background: var(--paper3);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.sc-prob-fill {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.scenario-card.best .sc-prob-fill { background: var(--green2); }
+.scenario-card.mid .sc-prob-fill { background: var(--amber2); }
+.scenario-card.worst .sc-prob-fill { background: var(--red2); }
+
+.sc-prob-num {
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  font-weight: 500;
+  width: 36px;
+  text-align: right;
+}
+
+.scenario-card.best .sc-prob-num { color: var(--green); }
+.scenario-card.mid .sc-prob-num { color: var(--amber); }
+.scenario-card.worst .sc-prob-num { color: var(--red); }
+
+.sc-body {
+  font-size: 12.5px;
+  color: #444;
+  line-height: 1.65;
+}
+
+.sc-outcomes {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.sc-outcome-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 11.5px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.sc-icon {
+  flex-shrink: 0;
+  font-size: 12px;
+  margin-top: 1px;
+}
+
+/* TWO COL LAYOUT */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.three-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+/* STAT BOXES */
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  margin-bottom: 32px;
+}
+
+@media (max-width: 700px) {
+  .stat-row { grid-template-columns: repeat(3, 1fr); }
+  .two-col { grid-template-columns: 1fr; }
+  .three-col { grid-template-columns: 1fr 1fr; }
+}
+
+.stat-box {
+  background: var(--paper2);
+  padding: 16px 14px;
+  text-align: center;
+}
+
+.stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+/* ANALYSIS PANELS */
+.analysis-panel {
+  background: var(--paper2);
+  border: 1px solid var(--border);
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.panel-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.panel-body {
+  font-size: 13px;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* METRIC BARS */
+.metric-table { width: 100%; }
+.metric-tr {
+  display: grid;
+  grid-template-columns: 160px 1fr 80px;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.metric-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+}
+
+.metric-bar-bg {
+  height: 8px;
+  background: var(--paper3);
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.metric-bar-fill {
+  height: 100%;
+  border-radius: 1px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: growBar 1s ease forwards;
+}
+
+.metric-bar-fill:nth-child(1) { animation-delay: 0.1s; }
+
+@keyframes growBar {
+  to { transform: scaleX(1); }
+}
+
+.metric-value {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  text-align: right;
+  font-weight: 500;
+}
+
+.neg { color: var(--red); }
+.pos { color: var(--green); }
+.warn { color: var(--amber); }
+.neut { color: var(--blue); }
+
+/* AI CARDS */
+.ai-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.ai-card {
+  border: 1px solid var(--border);
+  background: var(--paper2);
+  padding: 16px;
+}
+
+.ai-verdict {
+  display: inline-block;
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 2px;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  border: 1px solid;
+}
+
+.headwind { color: var(--red); border-color: var(--red); background: rgba(139,26,26,0.06); }
+.tailwind { color: var(--green); border-color: var(--green); background: rgba(26,92,42,0.06); }
+.mixed { color: var(--amber); border-color: var(--amber); background: rgba(160,92,0,0.06); }
+
+.ai-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.ai-body {
+  font-size: 12.5px;
+  color: #444;
+  line-height: 1.65;
+}
+
+/* DIPLOMATIC STATUS */
+.diplo-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+
+.diplo-table thead tr {
+  border-bottom: 2px solid var(--ink);
+}
+
+.diplo-table th {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: left;
+  padding: 8px 12px;
+}
+
+.diplo-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border2);
+  vertical-align: top;
+}
+
+.diplo-table tr:last-child td { border-bottom: none; }
+
+.diplo-table tr:nth-child(even) td { background: var(--paper2); }
+
+.status-pill {
+  display: inline-block;
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 1px;
+  padding: 2px 8px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.s-active { background: rgba(139,26,26,0.12); color: var(--red); border: 1px solid var(--red); }
+.s-watch { background: rgba(160,92,0,0.1); color: var(--amber); border: 1px solid var(--amber); }
+.s-cool { background: rgba(26,92,42,0.1); color: var(--green); border: 1px solid var(--green); }
+.s-unknown { background: rgba(26,58,92,0.1); color: var(--blue); border: 1px solid var(--blue); }
+
+/* SUPPLY CHAIN MAP */
+.chain-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.chain-card {
+  border: 1px solid var(--border);
+  padding: 14px;
+  background: var(--paper2);
+}
+
+.chain-icon { font-size: 20px; margin-bottom: 6px; }
+
+.chain-title {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.chain-body {
+  font-size: 12px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.chain-severity {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+/* FOOTNOTES / SOURCES */
+.sources {
+  background: var(--paper3);
+  border: 1px solid var(--border);
+  padding: 16px 20px;
+  margin-top: 40px;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+.sources strong { color: var(--ink); display: block; margin-bottom: 6px; letter-spacing: 2px; font-size: 11px; }
+
+/* NAV */
+.nav-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid var(--ink);
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.nav-tab {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: all 0.2s;
+}
+
+.nav-tab:hover { color: var(--ink); }
+.nav-tab.active { color: var(--red); border-bottom-color: var(--red); background: var(--paper2); }
+
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .masthead-inner { padding: 20px 16px; }
+  .page { padding: 20px 12px; }
+  .timeline-grid { grid-template-columns: 70px 1fr; }
+  .tl-date-col { font-size: 9px; padding-right: 10px; }
+  .tl-content { padding-left: 12px; }
+  .tl-headline { font-size: 15px; }
+  .metric-tr { grid-template-columns: 120px 1fr 60px; }
+  .stat-row { grid-template-columns: repeat(3, 1fr); }
+  .chain-grid { grid-template-columns: 1fr 1fr; }
+  .ai-grid { grid-template-columns: 1fr; }
+  .nav-tab { padding: 8px 12px; font-size: 10px; }
+}
+
+/* ANIMATIONS */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 28px 0;
+}
+
+.byline {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.highlight-box {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 16px 20px;
+  margin: 16px 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.highlight-box strong { color: var(--red3); }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-kicker">Intelligence Brief — Middle East Strategic Analysis</div>
+    <div class="masthead-title">THE 2026<br><span>IRAN WAR</span></div>
+    <div class="masthead-deck">A comprehensive analysis of the ongoing US–Israel war on Iran: military trajectory, ceasefire prospects, economic shockwaves, AI sector exposure, and long-term structural consequences for the global order.</div>
+    <div class="masthead-meta">
+      <div class="meta-item">Updated: <strong>March 30, 2026</strong></div>
+      <div class="meta-item">War Day: <strong>Day 30</strong></div>
+      <div class="meta-item">Status: <strong>Active Conflict</strong></div>
+      <div class="meta-item">Sources: <strong>Atlantic Council · CSIS · CFR · Wikipedia · Bloomberg · AP · IMF · WEF · PBS · CSMonitor · ECFR · Washington Institute · Al Jazeera · ACLED</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- LIVE TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ticker-item">⚡ <strong>Day 30:</strong> Operation Epic Fury ongoing — US strikes across 26 of Iran's 31 provinces</span>
+    <span class="ticker-item">🛢 <strong>Oil:</strong> Brent crude $120/bbl — Dubai crude peaked $167/bbl</span>
+    <span class="ticker-item">🇮🇷 <strong>Iran:</strong> Rejects US ceasefire proposal as "maximalist, unreasonable" — demands sanctions lifted, compensation paid</span>
+    <span class="ticker-item">📉 <strong>US Economy:</strong> Goldman Sachs raises recession odds to 30% — EY-Parthenon at 40%</span>
+    <span class="ticker-item">🤖 <strong>AI:</strong> AWS UAE availability zones "impaired" after Iranian drone strikes — $2.2T in Gulf tech deals at risk</span>
+    <span class="ticker-item">🌊 <strong>Hormuz:</strong> ~20% of global oil trade disrupted — Houthis resume Red Sea attacks</span>
+    <span class="ticker-item">🏛 <strong>Fed:</strong> March dot plot: 1 cut in 2026 — Polymarket gives 31.2% odds of zero cuts</span>
+    <span class="ticker-item">⚡ <strong>Day 30:</strong> Operation Epic Fury ongoing — US strikes across 26 of Iran's 31 provinces</span>
+    <span class="ticker-item">🛢 <strong>Oil:</strong> Brent crude $120/bbl — Dubai crude peaked $167/bbl</span>
+    <span class="ticker-item">🇮🇷 <strong>Iran:</strong> Rejects US ceasefire proposal as "maximalist, unreasonable" — demands sanctions lifted, compensation paid</span>
+    <span class="ticker-item">📉 <strong>US Economy:</strong> Goldman Sachs raises recession odds to 30% — EY-Parthenon at 40%</span>
+    <span class="ticker-item">🤖 <strong>AI:</strong> AWS UAE availability zones "impaired" after Iranian drone strikes — $2.2T in Gulf tech deals at risk</span>
+    <span class="ticker-item">🌊 <strong>Hormuz:</strong> ~20% of global oil trade disrupted — Houthis resume Red Sea attacks</span>
+    <span class="ticker-item">🏛 <strong>Fed:</strong> March dot plot: 1 cut in 2026 — Polymarket gives 31.2% odds of zero cuts</span>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- KEY STATS -->
+  <div class="stat-row" style="margin-top: 32px;">
+    <div class="stat-box"><div class="stat-num neg">Day 30</div><div class="stat-label">Conflict Duration</div></div>
+    <div class="stat-box"><div class="stat-num neg">$120</div><div class="stat-label">Brent Crude $/bbl</div></div>
+    <div class="stat-box"><div class="stat-num warn">40%</div><div class="stat-label">US Recession Odds (EY)</div></div>
+    <div class="stat-box"><div class="stat-num neg">9</div><div class="stat-label">Countries Iran Struck</div></div>
+    <div class="stat-box"><div class="stat-num warn">4.2%</div><div class="stat-label">US Inflation Forecast 2026</div></div>
+  </div>
+
+  <!-- NAV -->
+  <div class="nav-tabs">
+    <button class="nav-tab active" onclick="showTab('tab-timeline')">Timeline</button>
+    <button class="nav-tab" onclick="showTab('tab-military')">Military & Diplomatic</button>
+    <button class="nav-tab" onclick="showTab('tab-scenarios')">Scenarios</button>
+    <button class="nav-tab" onclick="showTab('tab-economy')">Global Economy</button>
+    <button class="nav-tab" onclick="showTab('tab-us')">US Economy</button>
+    <button class="nav-tab" onclick="showTab('tab-ai')">AI Sector</button>
+    <button class="nav-tab" onclick="showTab('tab-longterm')">Long-Term</button>
+  </div>
+
+  <!-- TAB: TIMELINE -->
+  <div class="tab-panel active" id="tab-timeline">
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <span class="section-title">The Road to War: A Complete Timeline</span>
+      <span class="section-sub">2023 → 2027</span>
+    </div>
+
+    <div class="pull-quote">
+      <p>"This time, the US and Israel adopted a fundamentally different objective. The opening salvo assassinated Supreme Leader Khamenei… based on the assumption that eliminating the head of state would precipitate instant capitulation. That has not happened."</p>
+      <cite>— Al Jazeera, March 11, 2026</cite>
+    </div>
+
+    <!-- TL ITEMS -->
+    <div class="timeline-grid">
+      <div class="tl-date-col">Oct 2023<div class="tl-dot past"></div></div>
+      <div class="tl-content">
+        <div class="tl-headline">Hamas Oct. 7 Attack Ignites Regional Arc</div>
+        <div class="tl-body">Hamas's assault on Israel triggers the Gaza War, pulling Iran-backed Axis of Resistance — Hezbollah, Houthis, Iraqi PMF — into escalating proxy confrontation. The US and Israel begin systematically weakening Iran's forward network over 2023–24.</div>
+        <div class="tl-tags"><span class="tl-tag red">Proxy War Begins</span><span class="tl-tag">Gaza</span></div>
+      </div>
+    </div>
+
+    <div class="timeline-grid">
+      <div class="tl-date-col">2024<div class="tl-dot past"></div></div>
+      <div class="tl-content">
+        <div class="tl-headline">Iran–Israel Direct Exchanges; Iran's Air Defenses Destroyed</div>
+        <div class="tl-body">Iran and Israel exchange direct missile strikes in April and October 2024. Israel's October strikes destroy virtually all of Iran's Russian-supplied S-300 missile defense systems, removing the key obstacle to future deep airstrikes. Haniyeh assassinated in Tehran; Nasrallah killed in Beirut. Syria falls, stripping Iran of its critical land corridor to Hezbollah.</div>
+        <div class="tl-tags"><span class="tl-tag red">S-300s Destroyed</span><span class="tl-tag">Iran Isolated</span><span class="tl-tag red">Proxy Network Gutted</span></div>
+      </div>
+    </div>
+
+    <div class="timeline-grid">
+      <div class="tl-date-col">Jun 13–24, 2025<div class="tl-dot past"></div></div>
+      <div class="tl-content">
+        <div class="tl-headline">The Twelve-Day War: Nuclear Program Set Back, Ceasefire Achieved</div>
+        <div class="tl-body">Israel launches surprise strikes on Natanz, Fordow, and Isfahan nuclear facilities. The US joins, bombing three nuclear sites on June 22. Iran retaliates with 550+ ballistic missiles and 1,000+ drones; Israel and US defenses intercept most but interceptor stockpiles are significantly depleted. The US Defense Dept. estimates Iran's nuclear program set back by 2 years. Ceasefire brokered by Oman on June 24. Iran's pre-war stockpile was estimated at ~440 kg of 60% enriched uranium — enough for 9 warheads. Critically, Isfahan's underground tunnel complex is undamaged, and Iran's enriched stockpile remains largely intact and inaccessible.</div>
+        <div class="tl-tags"><span class="tl-tag amber">Ceasefire</span><span class="tl-tag red">Nuclear Partially Degraded</span><span class="tl-tag">Oman Mediation</span></div>
+      </div>
+    </div>
+
+    <div class="timeline-grid">
+      <div class="tl-date-col">Dec 2025–Jan 2026<div class="tl-dot past"></div></div>
+      <div class="tl-content">
+        <div class="tl-headline">Iran's Worst Domestic Crisis Since 1979; Nuclear Restart Confirmed</div>
+        <div class="tl-body">Protests beginning December 28 spread to all 31 provinces, driven by Iran's collapsing economy, 1,500+ executions in 2025, and deteriorating infrastructure. The regime kills tens of thousands of demonstrators. Simultaneously, IAEA confirms Iran has stored 60% enriched uranium — near-weapons-grade — in an undamaged underground facility at Isfahan. US, UK, and European officials present three core demands: permanent end to enrichment, ballistic missile caps, end to proxy support. Iran rebuilds its damaged nuclear infrastructure. The window for diplomacy rapidly closes.</div>
+        <div class="tl-tags"><span class="tl-tag red">Regime Under Siege</span><span class="tl-tag red">Nuclear Reconstituted</span><span class="tl-tag">IAEA Warning</span></div>
+      </div>
+    </div>
+
+    <div class="timeline-grid">
+      <div class="tl-date-col">Feb 25–27, 2026<div class="tl-dot past"></div></div>
+      <div class="tl-content">
+        <div class="tl-headline">Diplomacy Within Reach — Then Destroyed</div>
+        <div class="tl-body">Iranian FM Araghchi tells reporters a "historic agreement" is "within reach." Negotiations continue in Geneva led by Witkoff and Kushner. Trump declares at the State of the Union that Iran has restarted its nuclear program and is developing ICBMs. Behind the scenes, Saudi Crown Prince MBS makes multiple phone calls urging Trump to strike, and Senator Lindsey Graham makes the final case. Intelligence identifies Khamenei attending a ground-level security council meeting — a rare window. The decision is made. A senior Trump adviser tells journalists it would be better for Israel to strike first so the US has justification to retaliate.</div>
+        <div class="tl-tags"><span class="tl-tag amber">Diplomacy Sabotaged</span><span class="tl-tag">Saudi Pressure</span><span class="tl-tag red">Intel Window</span></div>
+      </div>
+    </div>
+
+    <div class="timeline-grid">
+      <div class="tl-date-col" style="color:var(--red); font-weight:600;">Feb 28, 2026<div class="tl-dot now"></div></div>
+      <div class="tl-content" style="background:rgba(139,26,26,0.04); border:1px solid rgba(139,26,26,0.2); padding:14px; border-radius:2px;">
+        <div class="tl-headline" style="color:var(--red);">⚡ Operation Epic Fury Begins — Day 0</div>
+        <div class="tl-body">At 9:40 AM Tehran time, massive explosions across the Iranian capital. US and Israeli jets simultaneously target three senior leadership gatherings identified by intelligence. Supreme Leader Ali Khamenei is killed along with multiple IRGC commanders and family members. Iran's Assembly of Experts building is destroyed before it can convene to select a successor. Iran retaliates within hours with hundreds of missiles and thousands of drones targeting Israel, all six Gulf Cooperation Council states, Jordan, Turkey (missiles shot down), and Cyprus (Hezbollah strikes UK RAF base). Iran's IRGC declares the Strait of Hormuz closed. This launch, mid-negotiations, shatters any prospect of near-term talks — Iran later says the US has now twice launched wars during diplomatic discussions, making future negotiations deeply unreliable.</div>
+        <div class="tl-tags"><span class="tl-tag now">Day 0 — War Starts</span><span class="tl-tag red">Khamenei Killed</span><span class="tl-tag red">Hormuz Closed</span><span class="tl-tag red">9 Countries Struck</span></div>
+      </div>
+    </div>
+
+    <div class="timeline-grid">
+      <div class="tl-date-col" style="color:var(--red);">Mar 1–15, 2026<div class="tl-dot now"></div></div>
+      <div class="tl-content" style="background:rgba(139,26,26,0.04); border:1px solid rgba(139,26,26,0.2); padding:14px; border-radius:2px;">
+        <div class="tl-headline" style="color:var(--red);">War Widens: Horizontal Escalation Across the Region</div>
+        <div class="tl-body">Mojtaba Khamenei, the second son, emerges as new Supreme Leader — the man Trump called "unacceptable." IRGC and all major factions pledge loyalty. Israel launches ground incursion into southern Lebanon; Hezbollah fires missiles at Tel Aviv. Qatar shoots down Iranian Su-24 bombers attempting to strike Doha airport. Brent crude crosses $100 on March 8, then $120. US first 100 hours of combat cost $3.7 billion, mostly unbudgeted. Iran targets AWS data centers in UAE and Bahrain; two of three availability zones remain impaired. Iran publishes list of US tech company offices as potential targets: Google, Microsoft, Palantir, IBM, Nvidia, Oracle. UK allows Diego Garcia and RAF Fairford to be used for defensive operations but declines direct participation.</div>
+        <div class="tl-tags"><span class="tl-tag now">Active</span><span class="tl-tag red">Lebanon Opens</span><span class="tl-tag red">Tech Targets Listed</span><span class="tl-tag red">$100+ Oil</span></div>
+      </div>
+    </div>
+
+    <div class="timeline-grid">
+      <div class="tl-date-col" style="color:var(--red);">Mar 16–30, 2026<div class="tl-dot now"></div></div>
+      <div class="tl-content" style="background:rgba(139,26,26,0.04); border:1px solid rgba(139,26,26,0.2); padding:14px; border-radius:2px;">
+        <div class="tl-headline" style="color:var(--red);">Iran Gains Leverage; Ceasefire Rejected; Attrition Sets In</div>
+        <div class="tl-body">Iran rejects US 15-point ceasefire proposal as "maximalist and unreasonable." Iran's senior military adviser demands: sanctions lifted, compensation paid, legally binding guarantees against future attack. Iran's confidence grows as oil prices surge and global pressure builds on Washington. G7 declines to jointly tap strategic reserves. OECD forecasts US inflation at 4.2% for 2026. ECB postpones rate cuts. Trump temporarily pauses bombing pause on March 23 for "talks" — 15 minutes before announcement, $580M in bets on falling oil prices are placed; insider trading allegations emerge. Analysts note Iran has already achieved something remarkable: forcing a shift away from US "maximum demands" toward something resembling Iran's survival on acceptable terms.</div>
+        <div class="tl-tags"><span class="tl-tag red">Ceasefire Rejected</span><span class="tl-tag amber">Iran Demands</span><span class="tl-tag red">Insider Trading Probe</span><span class="tl-tag now">Day 30 — Today</span></div>
+      </div>
+    </div>
+
+    <div class="timeline-grid">
+      <div class="tl-date-col">Q2 2026<br>Projected<div class="tl-dot future"></div></div>
+      <div class="tl-content">
+        <div class="tl-headline">The Critical Inflection Window</div>
+        <div class="tl-body">The most likely inflection point. Three pathways emerge: (1) Negotiated de-escalation if Iran's new leadership finds a face-saving exit and US accepts less than full capitulation — the "Venezuela model"; (2) Prolonged attrition as both sides grind toward a diplomatically managed pause; (3) Full regional escalation if Houthis fully re-enter the Red Sea and Iraqi PMF activates against US forces, straining America's military logistics and domestic support. US interceptor stockpiles, already depleted from 2025, are a key operational constraint. Iraqi troop withdrawal timeline of September 2026 is a potential flashpoint.</div>
+        <div class="tl-tags"><span class="tl-tag amber">Inflection Point</span><span class="tl-tag">Venezuela Model Possible</span><span class="tl-tag red">Houthi Re-Entry Risk</span></div>
+      </div>
+    </div>
+
+    <div class="timeline-grid">
+      <div class="tl-date-col">Q3–Q4 2026<br>Projected<div class="tl-dot future"></div></div>
+      <div class="tl-content">
+        <div class="tl-headline">Post-Ceasefire or Grinding Attrition</div>
+        <div class="tl-body">If ceasefire holds: Gulf states begin the multi-year process of rebuilding energy infrastructure; LNG facilities in Qatar that were damaged will take years to repair. Alternative pipeline corridors through the Arabian Peninsula into Israeli ports would begin development. Iran's regime survives in some form. If attrition continues: structural energy market disruption becomes permanent until at least 2027. US midterm political environment becomes volatile. European deindustrialization risk in energy-intensive sectors becomes real.</div>
+        <div class="tl-tags"><span class="tl-tag amber">Qatar LNG: Years to Repair</span><span class="tl-tag">Pipeline Alternatives</span><span class="tl-tag red">European Recession Risk</span></div>
+      </div>
+    </div>
+
+    <div class="timeline-grid" style="opacity:0.75;">
+      <div class="tl-date-col">2027+<br>Long-Term<div class="tl-dot far"></div></div>
+      <div class="tl-content">
+        <div class="tl-headline">Post-War Structural Order</div>
+        <div class="tl-body">The defining unanswered question: Iran's nuclear stockpile. No plan to destroy, seize, or put under international inspection has been confirmed — a potentially catastrophic gap in US war planning. A post-war Iran with a surviving regime could reconstitute within years. A collapsed Iranian state would be a failed state the size of France on the Gulf's doorstep, potentially worse. Middle East investment flows structurally shift. "Safe-haven" capital floods into Western real estate, dollar assets, defense stocks, mirroring post-1973 and post-1979 petrodollar flows. Renewable energy investment permanently accelerated.</div>
+        <div class="tl-tags"><span class="tl-tag red">Nuclear Stockpile Unresolved</span><span class="tl-tag blue">Capital Flight West</span><span class="tl-tag green">Renewables Era</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB: MILITARY & DIPLOMATIC -->
+  <div class="tab-panel" id="tab-military">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <span class="section-title">Military & Diplomatic Status</span>
+      <span class="section-sub">Current state of play</span>
+    </div>
+
+    <div class="two-col impact-two-col">
+      <div class="analysis-panel">
+        <div class="panel-title">🇺🇸 US–Israel Strategic Objectives</div>
+        <div class="panel-body">
+          <p>Washington's stated objectives have shifted repeatedly since February 28, illustrating the fog of war at the political level. As of Week 1, the Washington Institute identified four core US goals: (1) destroy Iran's navy — achieved, with 50+ vessels sunk; (2) degrade Iran's ballistic missile infrastructure; (3) prevent nuclear weapons development; (4) cut off proxy networks like Hezbollah and Houthis.</p>
+          <br>
+          <p>Regime change was implied early — Trump told Iranians to "take over your government" in the first hours — but was officially walked back within 24 hours. Israel maintains a more expansive vision; Israeli officials indicated pre-war that Iran would face comprehensive war until regime overthrow or state fragmentation.</p>
+          <br>
+          <p>The gap between US and Israeli objectives is a significant strategic vulnerability. The US seeking a "Venezuela-style" managed outcome (regime stays, concedes) is incompatible with Israel's regime-change goal, creating the risk of the US becoming trapped in a war longer than desired.</p>
+        </div>
+      </div>
+      <div class="analysis-panel">
+        <div class="panel-title">🇮🇷 Iran's Strategic Endgame</div>
+        <div class="panel-body">
+          <p>Iran's strategy has evolved from the 2025 playbook. Rather than rapid de-escalation, the new Khamenei regime has embraced a prolonged war of attrition — calculating that time works against the US: "The Iranians seem to believe they are in a position where not only does the regime survive, but it imposes enough costs to deter future attacks," says Ali Vaez of the International Crisis Group.</p>
+          <br>
+          <p>Iran's demands are sweeping: sanctions lifted, compensation paid, and legally binding guarantees against future aggression. Iran's military spokesman has publicly mocked Trump in English, suggesting the regime believes it has seized a propaganda upper hand.</p>
+          <br>
+          <p>Critically, Iran has successfully "broadened the battlefield and raised economic costs for adversaries" while maintaining regime cohesion. The Strait of Hormuz closure is Iran's most effective weapon — costing the global economy far more than Iran's military losses. Iran's calculation: sustain pressure until a US-led ceasefire preserves the regime. The risk: overplaying a strong hand.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-head" style="margin-top:24px;">
+      <span class="section-num">02b</span>
+      <span class="section-title">Proxy Network & Regional Actor Status</span>
+    </div>
+
+    <div style="overflow-x:auto;">
+    <table class="diplo-table">
+      <thead>
+        <tr>
+          <th>Actor</th>
+          <th>Current Status</th>
+          <th>Capacity</th>
+          <th>Assessment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Hezbollah (Lebanon)</strong></td>
+          <td><span class="status-pill s-active">Active — Fighting</span></td>
+          <td>~25,000 missiles remaining; ~3,000 active fighters</td>
+          <td>Re-entered war March 2, striking Tel Aviv. Lebanon govt banned military activity but cannot enforce. Israel pursuing ground "security layer" in south Lebanon. Existential threat to Hezbollah from continued Israeli ops.</td>
+        </tr>
+        <tr>
+          <td><strong>Houthis (Yemen)</strong></td>
+          <td><span class="status-pill s-watch">Watch — Re-entering</span></td>
+          <td>Retained most Yemen territory and missiles</td>
+          <td>Ceased Red Sea attacks Oct 2025 after Hamas ceasefire. Now resuming per solidarity with Iran. If fully activated, Red Sea closure extends through 2026 — compounding global supply chain damage on top of Hormuz.</td>
+        </tr>
+        <tr>
+          <td><strong>Iraqi PMF</strong></td>
+          <td><span class="status-pill s-watch">Watch — Restrained</span></td>
+          <td>Significant; some elements outside Iraqi state control</td>
+          <td>US demanding disarmament; Iraqi politicians say no action before US troop withdrawal in Sep 2026. PMF activation would open a direct new front threatening US bases in Iraq and supply lines.</td>
+        </tr>
+        <tr>
+          <td><strong>Qatar</strong></td>
+          <td><span class="status-pill s-active">Conflict Party</span></td>
+          <td>Advanced air defenses; key US base (Al-Udeid)</td>
+          <td>Shot down two Iranian Su-24 bombers attempting to strike Doha airport. Hosting largest US air presence in region. LNG export infrastructure severely disrupted — some facilities will take years to repair.</td>
+        </tr>
+        <tr>
+          <td><strong>Saudi Arabia</strong></td>
+          <td><span class="status-pill s-watch">Complex — Pressured</span></td>
+          <td>Robust air defenses; significant oil capacity</td>
+          <td>MBS lobbied Trump to attack Iran while simultaneously absorbing Iranian strikes on Saudi energy infrastructure. Head of Saudi Aramco warns of "drastic" global economic effects. Deeply uncomfortable position: wanted Iran weakened but not infinite war that destroys its own economy.</td>
+        </tr>
+        <tr>
+          <td><strong>China</strong></td>
+          <td><span class="status-pill s-cool">Mediator</span></td>
+          <td>Strategic and commercial oil reserves; Iran trade relationship</td>
+          <td>Playing mediation role. Belt and Road trade routes disrupted. Protected by oil reserves and renewable investment. Will emerge from this conflict with leverage over any settlement — potential long-term beneficiary of US overreach.</td>
+        </tr>
+        <tr>
+          <td><strong>Oman / Pakistan</strong></td>
+          <td><span class="status-pill s-cool">Mediators</span></td>
+          <td>Diplomatic channels</td>
+          <td>Pakistan passed US ceasefire demands to Tehran. Oman brokered 2025 ceasefire; channels still open. No sign of imminent breakthrough given gap between US and Iranian positions.</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="pull-quote" style="margin-top:24px;">
+      <p>"It is no longer about regime change, no longer about internal uprising, no longer about electing a new supreme leader, no longer about wiping out Iran's missiles. The Iranians took the issue from maximum US desire toward Iran's survival on acceptable terms."</p>
+      <cite>— Hassan Ahmadian, Tehran University, Christian Science Monitor, March 24, 2026</cite>
+    </div>
+  </div>
+
+  <!-- TAB: SCENARIOS -->
+  <div class="tab-panel" id="tab-scenarios">
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <span class="section-title">Outcome Scenarios: Three Paths Forward</span>
+      <span class="section-sub">Probability-weighted analysis</span>
+    </div>
+
+    <div class="highlight-box">
+      The defining feature of this war is not military outcome but <strong>negotiating dynamics</strong>. Iran has already partially achieved its core strategic goal: shifting the conflict from a US-imposed "complete capitulation" demand to a negotiation in which Iran's regime survival is on the table. The question is not whether Iran wins militarily — it won't — but whether it survives politically on terms it can accept.
+    </div>
+
+    <div class="scenario-grid" style="margin-top:24px;">
+      <div class="scenario-card best">
+        <div class="sc-bar-top"></div>
+        <div class="sc-label">Scenario A — Best Case</div>
+        <div class="sc-title">Negotiated De-escalation<br>"The Venezuela Model"</div>
+        <div class="sc-prob">
+          <div class="sc-prob-bar"><div class="sc-prob-fill" style="width:20%"></div></div>
+          <div class="sc-prob-num">~20%</div>
+        </div>
+        <div class="sc-body">Iran's new leadership under Mojtaba Khamenei finds a face-saving exit: agreeing to verified nuclear suspension under a reconstituted IAEA framework, accepting constraints on ballistic missiles while retaining defensive capability, and halting active proxy operations. Trump accepts this as victory — analogous to the Venezuela outcome, where Maduro remained but began cooperating with US demands. Oman or Pakistan facilitate direct back-channel talks within weeks.</div>
+        <div class="sc-outcomes">
+          <div class="sc-outcome-row"><span class="sc-icon">🛢</span><span>Hormuz reopens within 2–4 weeks. Oil retreats to $80–90 within 3 months.</span></div>
+          <div class="sc-outcome-row"><span class="sc-icon">💰</span><span>US recession probability drops to baseline ~15%. Inflation moderates.</span></div>
+          <div class="sc-outcome-row"><span class="sc-icon">🤖</span><span>AI capex restarts in H2 2026. Gulf Stargate and Humain projects resume.</span></div>
+          <div class="sc-outcome-row"><span class="sc-icon">⚠️</span><span>Nuclear stockpile status remains unverified — major unresolved risk.</span></div>
+          <div class="sc-outcome-row"><span class="sc-icon">❌</span><span>Israel deeply dissatisfied — may resume strikes unilaterally within 1–2 years.</span></div>
+        </div>
+      </div>
+
+      <div class="scenario-card mid">
+        <div class="sc-bar-top"></div>
+        <div class="sc-label">Scenario B — Base Case</div>
+        <div class="sc-title">Prolonged Attrition War<br>3–6+ Month Grind</div>
+        <div class="sc-prob">
+          <div class="sc-prob-bar"><div class="sc-prob-fill" style="width:55%"></div></div>
+          <div class="sc-prob-num">~55%</div>
+        </div>
+        <div class="sc-body">Most likely trajectory. Iran fights a grinding war of attrition: sufficient missile capability to maintain Hormuz disruption, enough proxy pressure to raise costs, but insufficient to force a US exit. US air campaign continues but cannot achieve decisive regime collapse. Both sides fight toward a diplomatically managed pause — similar to stalemates in Korea and Vietnam — with neither achieving stated goals. War lasts through Q3 2026 minimum, with partial ceasefire emerging around US political pressure tied to midterms.</div>
+        <div class="sc-outcomes">
+          <div class="sc-outcome-row"><span class="sc-icon">🛢</span><span>Oil stays $100–130 through summer. Fertilizer shock hits 2026 crop yields.</span></div>
+          <div class="sc-outcome-row"><span class="sc-icon">💰</span><span>US recession probability: 35–40%. Stagflation the dominant economic regime.</span></div>
+          <div class="sc-outcome-row"><span class="sc-icon">🤖</span><span>AI capex delayed 1–3 quarters. Gulf buildout paused. Defense AI surges.</span></div>
+          <div class="sc-outcome-row"><span class="sc-icon">🏭</span><span>European deindustrialization in steel, chemicals begins. ECB in recession territory.</span></div>
+          <div class="sc-outcome-row"><span class="sc-icon">🌍</span><span>Developing nations face acute food and fuel crisis. IMF emergency lending surges.</span></div>
+        </div>
+      </div>
+
+      <div class="scenario-card worst">
+        <div class="sc-bar-top"></div>
+        <div class="sc-label">Scenario C — Tail Risk</div>
+        <div class="sc-title">Regional Conflagration<br>"The Widening War"</div>
+        <div class="sc-prob">
+          <div class="sc-prob-bar"><div class="sc-prob-fill" style="width:25%"></div></div>
+          <div class="sc-prob-num">~25%</div>
+        </div>
+        <div class="sc-body">Iran activates all remaining proxy networks simultaneously: Houthis fully re-enter Red Sea, Iraqi PMF attacks US bases in Iraq, Iran escalates to direct civilian infrastructure strikes across Gulf capitals. US military logistics face multi-front stress; interceptor stockpiles critically depleted. An accidental strike on Gulf oil super-infrastructure (Abqaiq, Ras Tanura) could trigger a $150–200 oil price spike. A failed state outcome in Iran following regime collapse creates a humanitarian and nuclear security catastrophe.</div>
+        <div class="sc-outcomes">
+          <div class="sc-outcome-row"><span class="sc-icon">🛢</span><span>Oil to $150–200 if Abqaiq struck. Global recession triggered. Energy economist: "If Hormuz stays closed indefinitely, recession in weeks, not a year."</span></div>
+          <div class="sc-outcome-row"><span class="sc-icon">💰</span><span>US recession: 60–70% probability. Global GDP: –1 to –2 pp. Great Depression echoes in developing world.</span></div>
+          <div class="sc-outcome-row"><span class="sc-icon">☢️</span><span>Iranian nuclear stockpile ungoverned after regime collapse. Worst-case proliferation scenario.</span></div>
+          <div class="sc-outcome-row"><span class="sc-icon">🤖</span><span>AI investment collapse — crypto 2022-style correction. Data center buildout halted globally.</span></div>
+          <div class="sc-outcome-row"><span class="sc-icon">🌍</span><span>Emerging market sovereign debt crises. Food riots in import-dependent nations. Belt and Road disrupted.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pull-quote" style="margin-top:8px;">
+      <p>"With its major rival crippled, the US might disengage even further as a regional security guarantor, leaving Arab Gulf states to deal with an emboldened Israel on their own. Iran's possible fall will also entrench another undesirable outcome: Israel's aggressive hegemony in the region."</p>
+      <cite>— European Council on Foreign Relations, March 2026</cite>
+    </div>
+  </div>
+
+  <!-- TAB: GLOBAL ECONOMY -->
+  <div class="tab-panel" id="tab-economy">
+    <div class="section-head">
+      <span class="section-num">04</span>
+      <span class="section-title">Global Economic Impact</span>
+      <span class="section-sub">The largest energy supply disruption in history</span>
+    </div>
+
+    <div class="highlight-box">
+      The IEA has called this <strong>the largest supply disruption in the history of the global oil market.</strong> Unlike the Russia–Ukraine war which could be managed through rerouting and substitution, the Hormuz blockade physically prevents producers from exporting — there is no bypass mechanism. The 1973 oil shock was an embargo; this is a physical chokepoint.
+    </div>
+
+    <div class="two-col impact-two-col" style="margin-top:24px;">
+      <div class="analysis-panel">
+        <div class="panel-title">🛢 Energy Markets</div>
+        <div class="metric-table">
+          <div class="metric-tr">
+            <div class="metric-label">Brent crude (current)</div>
+            <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:80%; background:var(--red2);"></div></div>
+            <div class="metric-value neg">~$120/bbl</div>
+          </div>
+          <div class="metric-tr">
+            <div class="metric-label">Brent crude (peak)</div>
+            <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:86%; background:var(--red);"></div></div>
+            <div class="metric-value neg">$126/bbl</div>
+          </div>
+          <div class="metric-tr">
+            <div class="metric-label">Dubai crude (peak)</div>
+            <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:100%; background:var(--red);"></div></div>
+            <div class="metric-value neg">$167/bbl</div>
+          </div>
+          <div class="metric-tr">
+            <div class="metric-label">Global oil disrupted</div>
+            <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:20%; background:var(--red2);"></div></div>
+            <div class="metric-value neg">~20%</div>
+          </div>
+          <div class="metric-tr">
+            <div class="metric-label">Hormuz tanker halt</div>
+            <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:95%; background:var(--red);"></div></div>
+            <div class="metric-value neg">Near-total</div>
+          </div>
+          <div class="metric-tr">
+            <div class="metric-label">6-month futures (Jan 2027)</div>
+            <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:47%; background:var(--green2);"></div></div>
+            <div class="metric-value pos">~$70/bbl</div>
+          </div>
+        </div>
+        <p style="font-size:11.5px;color:var(--muted);margin-top:10px;font-style:italic;">Note: Market is pricing in a short conflict. Forward pricing suggests traders expect resolution by late 2026 — but this may be overly optimistic given Iran's stated terms.</p>
+      </div>
+
+      <div class="analysis-panel">
+        <div class="panel-title">🌐 Global Growth & Inflation</div>
+        <div class="metric-table">
+          <div class="metric-tr">
+            <div class="metric-label">Global GDP forecast</div>
+            <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:42%; background:var(--red2);"></div></div>
+            <div class="metric-value neg">–0.2–0.4 pp</div>
+          </div>
+          <div class="metric-tr">
+            <div class="metric-label">IMF: 10% oil = inflation</div>
+            <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:50%; background:var(--amber2);"></div></div>
+            <div class="metric-value warn">+0.5 pp</div>
+          </div>
+          <div class="metric-tr">
+            <div class="metric-label">EU inflation forecast (wide)</div>
+            <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:88%; background:var(--red2);"></div></div>
+            <div class="metric-value neg">2.6–4.4%</div>
+          </div>
+          <div class="metric-tr">
+            <div class="metric-label">UK inflation 2026</div>
+            <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:100%; background:var(--red);"></div></div>
+            <div class="metric-value neg">&gt;5%</div>
+          </div>
+          <div class="metric-tr">
+            <div class="metric-label">ECB rate decision</div>
+            <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:30%; background:var(--amber2);"></div></div>
+            <div class="metric-value warn">Paused</div>
+          </div>
+          <div class="metric-tr">
+            <div class="metric-label">Global GDP (base: 3.3%)</div>
+            <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:70%; background:var(--amber2);"></div></div>
+            <div class="metric-value warn">→ ~2.9–3%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-head" style="margin-top:8px;">
+      <span class="section-num">04b</span>
+      <span class="section-title">Supply Chain Cascades</span>
+    </div>
+
+    <div class="chain-grid">
+      <div class="chain-card">
+        <div class="chain-icon">⛽</div>
+        <div class="chain-title">Petroleum & LNG</div>
+        <div class="chain-body">20 million barrels/day previously flowed through Hormuz. Near-total halt. Qatar LNG infrastructure damaged — repairs estimated at years, not months. Alternative routes add weeks and cost. No rerouting solution exists at this scale.</div>
+        <div class="chain-severity neg">Severity: CRITICAL</div>
+      </div>
+      <div class="chain-card">
+        <div class="chain-icon">🌾</div>
+        <div class="chain-title">Fertilizer & Food</div>
+        <div class="chain-body">Gulf supplies 33% of global urea, 25% of ammonia. Spring planting season requires fertilizer now. Delays mean crop impact in 2026–27. Food prices already rising; developing nations rationing. Chile and Poland scaling back rate-cut expectations.</div>
+        <div class="chain-severity neg">Severity: HIGH</div>
+      </div>
+      <div class="chain-card">
+        <div class="chain-icon">🔬</div>
+        <div class="chain-title">Helium & Semiconductors</div>
+        <div class="chain-body">Gulf provides significant global helium. Shortage could directly impact semiconductor manufacturing, delaying chip production — including AI chips. This is an underappreciated second-order effect on the very AI sector this war is disrupting.</div>
+        <div class="chain-severity warn">Severity: MODERATE</div>
+      </div>
+      <div class="chain-card">
+        <div class="chain-icon">⚗️</div>
+        <div class="chain-title">Sulfur & Chemicals</div>
+        <div class="chain-body">Gulf countries supply ~45% of global sulfur. Used in copper leaching, sulfuric acid, industrial chemicals. 30% surcharges already imposed by EU chemical and steel manufacturers. Permanent deindustrialization risk in some European sectors.</div>
+        <div class="chain-severity warn">Severity: MODERATE–HIGH</div>
+      </div>
+      <div class="chain-card">
+        <div class="chain-icon">💊</div>
+        <div class="chain-title">Pharmaceuticals</div>
+        <div class="chain-body">Oil byproducts feed directly into pharmaceutical supply chains. Shortages now may mean supply disruptions in 3–6 months. Gulf-routed logistics for global pharma distribution severely disrupted.</div>
+        <div class="chain-severity warn">Severity: EMERGING</div>
+      </div>
+      <div class="chain-card">
+        <div class="chain-icon">🚢</div>
+        <div class="chain-title">Global Shipping</div>
+        <div class="chain-body">150+ ships stranded around the Strait. War risk surcharges applied to all Gulf routes. Red Sea newly closed by Houthis. Both of the world's two most critical maritime chokepoints are now simultaneously disrupted — a historically unprecedented event.</div>
+        <div class="chain-severity neg">Severity: CRITICAL</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB: US ECONOMY -->
+  <div class="tab-panel" id="tab-us">
+    <div class="section-head">
+      <span class="section-num">05</span>
+      <span class="section-title">US Economy: Stagflation on the Horizon</span>
+      <span class="section-sub">A vulnerable economy meets an oil shock</span>
+    </div>
+
+    <div class="pull-quote">
+      <p>"Job losses and surging gas prices are a very nasty one-two punch to the economy. Historically, oil price shocks like this have led to global recessions."</p>
+      <cite>— David Kelly, JPMorgan Asset Management; Christopher Knittel, MIT Energy Economist</cite>
+    </div>
+
+    <div class="two-col impact-two-col">
+      <div class="analysis-panel">
+        <div class="panel-title">📉 Pre-War Economic Vulnerability</div>
+        <div class="panel-body">
+          The US economy was already fragile before February 28. Q4 2025 GDP grew at only 0.7% annualized — down sharply from 4.4% in Q3 — and employers cut 92,000 jobs in February 2026 alone. The economy added just 9,700 jobs monthly throughout 2025, the weakest pace outside a recession since 2002, with job losses in five of the prior nine months.
+          <br><br>
+          This stands in stark contrast to the 2022 Russia–Ukraine oil shock, when the economy was adding hundreds of thousands of jobs monthly. The US economy's resilience has been fundamentally different, and its capacity to absorb this shock is correspondingly weaker.
+          <br><br>
+          The pre-war vulnerability means the same oil price shock that was manageable in 2022 becomes potentially recessionary in 2026.
+        </div>
+      </div>
+      <div class="analysis-panel">
+        <div class="panel-title">🏛 The Fed's Impossible Dilemma</div>
+        <div class="panel-body">
+          The Chicago Fed president put it plainly: "If there's an overheating economy, there's an obvious playbook. If there's a garden-variety recession, there's an obvious playbook. But things where both sides get worse at the same time — that's a bad situation for the Central Bank."
+          <br><br>
+          The Fed's March dot plot called for just one 25bps cut in 2026. Markets have now moved toward pricing zero cuts, with Polymarket giving 31.2% odds of no cuts. The 10-year yield jumped to 4.46% on March 27 — its highest since July 2025 — while the 30-year mortgage climbed to 6.38%.
+          <br><br>
+          OECD forecasts US inflation at 4.2% in 2026 — 1.2 percentage points above prior projections. The Fed faces: cut rates → reignite inflation. Hold rates → choke a weakening economy. There is no good option.
+        </div>
+      </div>
+    </div>
+
+    <div class="analysis-panel">
+      <div class="panel-title">💰 Key US Economic Metrics</div>
+      <div class="metric-table">
+        <div class="metric-tr">
+          <div class="metric-label">US Recession odds (EY)</div>
+          <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:40%; background:var(--red2);"></div></div>
+          <div class="metric-value neg">40%</div>
+        </div>
+        <div class="metric-tr">
+          <div class="metric-label">Recession odds (Goldman)</div>
+          <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:30%; background:var(--red2);"></div></div>
+          <div class="metric-value neg">30%</div>
+        </div>
+        <div class="metric-tr">
+          <div class="metric-label">Inflation forecast 2026 (OECD)</div>
+          <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:84%; background:var(--red2);"></div></div>
+          <div class="metric-value neg">4.2%</div>
+        </div>
+        <div class="metric-tr">
+          <div class="metric-label">CA gasoline price</div>
+          <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:100%; background:var(--red);"></div></div>
+          <div class="metric-value neg">&gt;$5/gal</div>
+        </div>
+        <div class="metric-tr">
+          <div class="metric-label">10-yr Treasury yield</div>
+          <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:89%; background:var(--amber2);"></div></div>
+          <div class="metric-value warn">4.46%</div>
+        </div>
+        <div class="metric-tr">
+          <div class="metric-label">30-yr mortgage rate</div>
+          <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:85%; background:var(--amber2);"></div></div>
+          <div class="metric-value warn">6.38%</div>
+        </div>
+        <div class="metric-tr">
+          <div class="metric-label">Defense spending request</div>
+          <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:75%; background:var(--amber2);"></div></div>
+          <div class="metric-value warn">+50% ($1.5T)</div>
+        </div>
+        <div class="metric-tr">
+          <div class="metric-label">Q4 2025 GDP growth</div>
+          <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:7%; background:var(--red);"></div></div>
+          <div class="metric-value neg">0.7% ann.</div>
+        </div>
+        <div class="metric-tr">
+          <div class="metric-label">Market: zero rate cuts (2026)</div>
+          <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:31%; background:var(--amber2);"></div></div>
+          <div class="metric-value warn">31.2%</div>
+        </div>
+        <div class="metric-tr">
+          <div class="metric-label">Inflation above 3% probability</div>
+          <div class="metric-bar-bg"><div class="metric-bar-fill" style="width:98%; background:var(--red);"></div></div>
+          <div class="metric-value neg">97.8%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="analysis-panel">
+      <div class="panel-title">📊 Historical Context: The 1970s Parallel</div>
+      <div class="panel-body">
+        Economists are invoking the 1970s oil shock because the supply mechanism is identical: an acute chokepoint disruption driven by geopolitical conflict. The supply shock is actually <em>larger</em> than 1973 in absolute oil volume affected, though price increases have been smaller so far — dampened by: greater US domestic oil production (shale), larger strategic reserves worldwide, diversified global oil supply, and market expectation of a short conflict.
+        <br><br>
+        However, if the conflict extends and Hormuz remains partially closed through summer 2026, those buffers will be exhausted. At $140/bbl sustained, University of Chicago economist Sam Ori warns: "If oil reaches 4–5% of GDP and stays elevated, that has always triggered a recession." The indefinite closure scenario "would so vastly exceed that number, it would not take a year."
+        <br><br>
+        The 1973 crisis accelerated France's nuclear power program. The 1979 Iranian Revolution drove Japan's energy-efficiency push. This conflict, the WEF notes, "may prove to be a powerful accelerant for diversification, redundancy and stockpiling" — but structural adjustment takes years, and the pain accrues now.
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB: AI -->
+  <div class="tab-panel" id="tab-ai">
+    <div class="section-head">
+      <span class="section-num">06</span>
+      <span class="section-title">AI Sector: Threat, Resilience & Acceleration</span>
+      <span class="section-sub">The $2.2 trillion Gulf AI buildout in the crossfire</span>
+    </div>
+
+    <div class="highlight-box">
+      AI data center investment accounted for <strong>39% of US GDP growth</strong> in the first three quarters of 2025, per the Federal Reserve Bank of St. Louis. The Iran War has placed this engine of growth directly in the crossfire — both through physical attacks on Gulf data centers and through macroeconomic channels that could slow the entire AI capex cycle.
+    </div>
+
+    <div class="ai-grid" style="margin-top:24px;">
+      <div class="ai-card">
+        <div class="ai-verdict headwind">Headwind #1</div>
+        <div class="ai-title">Physical Attacks on Gulf AI Infrastructure</div>
+        <div class="ai-body">Iran has directly attacked US AI and cloud infrastructure in the Gulf. AWS data centers in UAE and Bahrain were struck with drones and missiles in early March; two of three UAE availability zones remain "impaired." Iran's state media published a target list naming Google, Microsoft, Palantir, IBM, Nvidia, and Oracle as potential future targets. The UAE intercepted 165 ballistic missiles, 2 cruise missiles, and 541 drones in a single weekend, demonstrating the scale of threat to what was supposed to be the world's next great AI hub. The $2.2 trillion in Gulf tech investments announced during Trump's May 2025 tour — including Stargate UAE (5 gigawatts with OpenAI, G42, Nvidia, Oracle, Cisco) and Amazon's $5B Riyadh hub — are now in direct jeopardy.</div>
+      </div>
+
+      <div class="ai-card">
+        <div class="ai-verdict headwind">Headwind #2</div>
+        <div class="ai-title">Data Chokepoints: Both Undersea Cable Routes Closed</div>
+        <div class="ai-body">The undersea fiber-optic cables connecting Gulf data centers to Africa, South Asia, and Southeast Asia pass through two narrow corridors: the Red Sea and the Strait of Hormuz. Both are now effectively closed. Iran's IRGC declared Hormuz shut March 3 — and the Houthis have resumed attacks in the Red Sea in solidarity with Iran. Billions of dollars in operational cloud and AI infrastructure now depend on fiber cables running through active war zones. This is not a theoretical risk: outages to banking, payments, enterprise, and consumer services occurred in the conflict's first week.</div>
+      </div>
+
+      <div class="ai-card">
+        <div class="ai-verdict headwind">Headwind #3</div>
+        <div class="ai-title">Energy Cost & Capital Squeeze</div>
+        <div class="ai-body">AI data centers are largely natural gas–powered. Iran's strikes on Gulf gas infrastructure push up the energy costs underlying AI computation globally. BofA analysts warn: "Higher energy prices could become a bottleneck for AI capex — delays in investment because of an energy price shock could be a major headwind for 2026 growth." Simultaneously, rising interest rates force hedge funds and asset managers to meet redemptions, reducing capital available for AI investment. MIT's Paul Kedrosky: "The consequences are unknowable in terms of how this ripples through this highly interconnected energy and information grid." The crypto analogy is sobering: similar dynamics — rate rises, flight to safety — crushed crypto in 2022 after Ukraine.</div>
+      </div>
+
+      <div class="ai-card">
+        <div class="ai-verdict tailwind">Tailwind #1</div>
+        <div class="ai-title">Defense AI Surge: War as Accelerant</div>
+        <div class="ai-body">The war is simultaneously the most dramatic demonstration yet of AI's military utility. Palantir's AIP platform is actively supporting Operation Epic Fury according to analysts; its stock is up 12% since war began. Its $10B Army contract and NATO partnership position it centrally. Nvidia's hardware powers autonomous drone stacks used in combat operations. CrowdStrike is embedded in cyber defense of military systems. Bloomberg reports traders are using AI more extensively to interpret the war's market impacts. The Department of Defense's urgent need for AI-enabled intelligence, surveillance, and logistics could accelerate government AI procurement by years.</div>
+      </div>
+
+      <div class="ai-card">
+        <div class="ai-verdict tailwind">Tailwind #2</div>
+        <div class="ai-title">AI as Essential Infrastructure</div>
+        <div class="ai-body">Anthropic doubled its projected revenue run rate from late 2025 levels even amid the conflict. Global AI market CAGR of 30.6% remains intact per Grand View Research. The broader evidence suggests AI demand is structurally inelastic — comparable to how internet adoption continued through the dot-com bust, energy prices, and geopolitical shocks. Nvidia's $500B backlog for 2026 and additional $500B projected for 2027 suggests customers are not pulling back orders. Nvidia controls 90%+ of the data center GPU market. The question is timing of deployment, not ultimate demand.</div>
+      </div>
+
+      <div class="ai-card">
+        <div class="ai-verdict mixed">Mixed Signal</div>
+        <div class="ai-title">Gulf Buildout: Pause or Pivot?</div>
+        <div class="ai-body">The UAE and Saudi Arabia see AI buildout as existential for their post-oil economic futures and are unlikely to abandon it. Given the massive sunk costs (power contracts, land, fiber connectivity), relocation is impractical — but new deployments are being hedged or paused. Companies are asking: "How much will new hardening measures cost? Are there viable alternative sites? How much delay would shifting cause?" The answer for existing capacity is stay and harden. For new capacity, the math is being rethought. India, Malaysia, and other Southeast Asian hubs are emerging as alternatives, accelerated by this conflict.</div>
+      </div>
+
+      <div class="ai-card">
+        <div class="ai-verdict mixed">Mixed Signal</div>
+        <div class="ai-title">Clean Energy Accelerant for AI</div>
+        <div class="ai-body">High natural gas prices paradoxically accelerate the shift of AI data centers toward renewable energy — solar and wind — and more efficient cooling methods. This reduces AI's long-term vulnerability to hydrocarbon price shocks and could be a structural positive for the sector. Companies like Microsoft (nuclear), Google (geothermal), and Amazon (solar) that have diversified away from gas are better positioned. Helium shortages from the Gulf could impact semiconductor manufacturing including AI chips — a second-order supply chain effect that is underappreciated.</div>
+      </div>
+
+      <div class="ai-card">
+        <div class="ai-verdict headwind">Risk Factor</div>
+        <div class="ai-title">Stock Market Concentration Risk</div>
+        <div class="ai-body">Author Richard Bookstaber wrote in the NYT that the market's concentration in AI stocks is "unprecedented — and dangerous, because a shock to any one of these companies ripples across the entire market rather than being absorbed by it." Nvidia alone has had $500B+ in quarterly revenue expectations; a 10% guidance miss ripples through the entire S&P 500 because of its weighting. If AI stocks rotate into energy and defense as risk managers rebalance portfolios, the S&P 500 itself could see a correction that further reduces appetite for AI investment — a self-reinforcing feedback loop.</div>
+      </div>
+    </div>
+
+    <div class="analysis-panel" style="margin-top:8px;">
+      <div class="panel-title">📌 Company-by-Company Assessment</div>
+      <div style="overflow-x:auto;">
+      <table class="diplo-table">
+        <thead>
+          <tr><th>Company</th><th>Direct Exposure</th><th>Gulf Risk</th><th>Defense Upside</th><th>Verdict</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Nvidia</strong></td>
+            <td>Supply chain via TSMC; energy cost pressure on customers</td>
+            <td>High: Humain (18K Blackwell chips), Stargate UAE, named on Iran target list</td>
+            <td>Strong: drone hardware, sovereign AI, $500B backlog insulates</td>
+            <td><span class="status-pill s-watch">Hold — Near-term noise</span></td>
+          </tr>
+          <tr>
+            <td><strong>Palantir</strong></td>
+            <td>Minimal direct; US gov't contracts insulated</td>
+            <td>Low: primarily US/EU government revenue</td>
+            <td>Highest: AIP actively supporting ops; stock +12% since war started</td>
+            <td><span class="status-pill s-cool">Outperforming</span></td>
+          </tr>
+          <tr>
+            <td><strong>Amazon (AWS)</strong></td>
+            <td>Direct: UAE and Bahrain availability zones impaired</td>
+            <td>High: $5B Riyadh hub with Humain; UAE data center damage</td>
+            <td>Moderate: US gov't cloud contracts; e-commerce weathered past shocks</td>
+            <td><span class="status-pill s-watch">Monitor UAE recovery</span></td>
+          </tr>
+          <tr>
+            <td><strong>Microsoft</strong></td>
+            <td>Indirect: $15B UAE commitment through 2029</td>
+            <td>High: named on Iran list; UAE AI buildout paused</td>
+            <td>Moderate: Azure gov't, defense contracts, OpenAI partnership</td>
+            <td><span class="status-pill s-watch">Hedging Gulf exposure</span></td>
+          </tr>
+          <tr>
+            <td><strong>OpenAI</strong></td>
+            <td>Indirect via Stargate UAE partnership</td>
+            <td>High: 1GW UAE campus (Stargate) with G42 at risk</td>
+            <td>Moderate: domestic US buildout continues</td>
+            <td><span class="status-pill s-watch">Gulf timeline delayed</span></td>
+          </tr>
+          <tr>
+            <td><strong>Anthropic</strong></td>
+            <td>Minimal Gulf exposure; revenue doubled recently</td>
+            <td>Low: primarily US/EU-focused operations</td>
+            <td>Moderate: enterprise AI demand inelastic</td>
+            <td><span class="status-pill s-cool">Insulated</span></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB: LONG-TERM -->
+  <div class="tab-panel" id="tab-longterm">
+    <div class="section-head">
+      <span class="section-num">07</span>
+      <span class="section-title">Long-Term Structural Consequences</span>
+      <span class="section-sub">The world after this war ends</span>
+    </div>
+
+    <div class="three-col">
+      <div class="analysis-panel">
+        <div class="panel-title">☢️ The Nuclear Question: The War's Defining Unresolved Issue</div>
+        <div class="panel-body">
+          US Rep. Bill Foster raised the most alarming concern after a classified briefing: the Trump administration "never had a plan" for Iran's nuclear stockpile — to destroy it, seize it, or place it under international inspection. Even if the regime is defeated militarily, an ungoverned nuclear stockpile in a post-collapse Iran is potentially the worst global security outcome imaginable: enriched uranium accessible to multiple factions in a failed state the size of France.
+          <br><br>
+          If Iran's regime survives in any form, the war will — per ECFR — reinforce its belief that it cannot surrender its missile capabilities, since those are its primary deterrence against future attacks. Any post-war settlement that doesn't address the stockpile in a verifiable way simply sets up the next conflict in 3–5 years.
+        </div>
+      </div>
+      <div class="analysis-panel">
+        <div class="panel-title">🌍 Geopolitical Realignment</div>
+        <div class="panel-body">
+          China emerges as the long-term strategic winner regardless of military outcome. It avoided participation in the war, maintains trade relationships with all parties, holds strategic oil reserves insulating it from the immediate shock, and will have massive leverage in any post-war reconstruction and settlement process. Belt and Road disruption is temporary; China's structural position strengthens.
+          <br><br>
+          The Arab Gulf states face an existential dilemma: they wanted Iran weakened but not at the cost of their own infrastructure being targeted, their AI investments disrupted, and an Iranian failed state on their border. A collapsed Iran means Israel as the unchallenged regional hegemon — arguably worse for Gulf Arab interests than a constrained Islamic Republic.
+          <br><br>
+          European influence in the region is effectively finished. The US's willingness to start this war during active negotiations has permanently damaged European diplomatic credibility with regional actors.
+        </div>
+      </div>
+      <div class="analysis-panel">
+        <div class="panel-title">⚡ Energy & Technology Acceleration</div>
+        <div class="panel-body">
+          Every major energy shock in history has permanently accelerated structural change. The 1973 embargo built France's nuclear program. 1979 drove Japanese energy efficiency. This shock — simultaneously exposing Asian oil dependence, fertilizer supply fragility, and the concentration of AI infrastructure in a single volatile region — will be a multi-decade accelerant for:
+          <br><br>
+          <strong>Renewable energy:</strong> Solar and wind become dramatically more economically compelling against a backdrop of $120 oil. The EU's response will include accelerated electrification, faster decarbonization.
+          <br><br>
+          <strong>Nuclear power:</strong> Long-run baseload alternative for energy-importing nations.
+          <br><br>
+          <strong>AI infrastructure diversification:</strong> India, Malaysia, US domestic expansion, and Europe will absorb investment flows that were destined for the Gulf. This extends the AI buildout geographically but delays it temporally.
+          <br><br>
+          <strong>Capital flows:</strong> Historically, Gulf crises drive "safe-haven" petrodollar flows into Western real estate and dollar assets — London prime property in particular. This dynamic is already being noted by property analysts.
+        </div>
+      </div>
+    </div>
+
+    <div class="pull-quote" style="margin-top:8px;">
+      <p>"This is not only a regional crisis. It is a structural shock to the world economy, delivered at a moment of geoeconomic fragility. The longer it runs, the more lasting the damage becomes. First it hits oil, gas, shipping and aviation; then inflation, industrial costs and food security; and eventually trade routes, investment decisions and political stability."</p>
+      <cite>— World Economic Forum, March 2026</cite>
+    </div>
+
+    <div class="analysis-panel" style="margin-top:16px;">
+      <div class="panel-title">📋 Summary: The Variables That Determine Everything</div>
+      <div class="panel-body">
+        <p>The entire analytical picture collapses to five binary questions whose answers determine whether this war is a manageable 2022-Ukraine-style shock or a 1973-style structural decade-long rupture:</p>
+        <br>
+        <p><strong>1. Duration:</strong> Less than 3 months = manageable. More than 6 months = structural recession risk. "If oil reaches 4–5% of GDP and stays elevated, that has always triggered a recession." (University of Chicago)</p>
+        <br>
+        <p><strong>2. Hormuz status:</strong> Partial reopening = $80–90 oil. Full sustained closure = $140+ and recession. The strait is Iran's most powerful lever and the war's most important economic variable.</p>
+        <br>
+        <p><strong>3. Proxy network activation:</strong> If Houthis fully re-enter the Red Sea while Hormuz remains closed, both of the world's critical maritime chokepoints are simultaneously shut — a scenario with no historical precedent and no easy policy response.</p>
+        <br>
+        <p><strong>4. Iran's nuclear stockpile resolution:</strong> Verified elimination = durable peace. Unverified survival = conflict resumes in 3–5 years, likely with a regime that has learned from this war and prepared accordingly.</p>
+        <br>
+        <p><strong>5. US–Israel objective alignment:</strong> If Israel refuses to accept a "Venezuela model" outcome and continues pushing for regime change while the US wants an exit, the coalition fractures — potentially forcing the US into a war it can no longer control or exit cleanly.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="sources">
+    <strong>Sources & Attribution</strong>
+    Atlantic Council (March 2026) · Wikipedia: 2026 Iran War, Twelve-Day War, Economic Impact of 2026 Iran War · House of Commons Library CBP-10521 · CSIS Latest Analysis: War with Iran · Council on Foreign Relations Global Conflict Tracker · Al Jazeera Centre for Studies: Strategic Escalation & Conflict Sustainability · Al Jazeera: 12 Days: How 2025 Iran Blueprint Trapped US, Israel (March 11, 2026) · ACLED Middle East Special Issue March 2026 · Britannica: 2026 Iran War · European Council on Foreign Relations (March 2026) · Washington Institute: Assessing US Progress in the Iran War · Christian Science Monitor (March 24, 2026) · Bloomberg: Iran War Hits US Economic Growth Forecasts (March 25, 2026) · Benzinga/S&P Global: Trump's Golden Age Is Gone (March 2026) · AP/US News: Worries About Global Economic Pain (March 29, 2026) · CNN Business: How the Middle East War Could Spark a Recession · Al Jazeera: How Will the War on Iran Impact the US Economy · Harvard Business Review: Will the Iran War Deliver a Long-Predicted US Recession · PBS NewsHour: Chicago Fed President Breaks Down Economic Risks · TheStreet: Wall Street Resets Recession Bets · Morgan Stanley: Iran Conflict Oil Price Impacts · World Economic Forum: The Global Price Tag of War in the Middle East · CNBC: Iran War Hyperscalers Middle East AI Data Center Plans (March 11) · CNBC: US-Iran War Threatens Gulf AI Infrastructure · Rest of World: US-Iran War Threatens Gulf AI Infrastructure (March 2026) · The Hill: Iran War Casts Shadow Over Middle East AI Investments · TIME: The Iran War Could Hit AI (March 20, 2026) · Motley Fool: 3 AI Stocks Caught in Iran War Crossfire (March 2026) · Barclays / Goldman Sachs / EY-Parthenon: Recession probability estimates · IMF: Oil inflation impact estimates · Intellectia.ai: 2026 Strait of Hormuz Crisis · Al Jazeera: Iran Calls US Proposal "Maximalist, Unreasonable" (March 25, 2026)
+    <br><br>
+    <em>All projections are scenario-based analysis. Conflict is live and evolving. Data as of March 30, 2026.</em>
+  </div>
+
+</div>
+
+<script>
+function showTab(id) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('active');
+  
+  // Re-trigger metric bar animations
+  document.querySelectorAll('.metric-bar-fill').forEach((bar, i) => {
+    bar.style.animation = 'none';
+    bar.offsetHeight;
+    bar.style.animation = `growBar 1s ease ${i * 0.05}s forwards`;
+  });
+}
+</script>
+</body>
+</html>
